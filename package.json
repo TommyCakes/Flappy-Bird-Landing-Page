@@ -1,8 +1,25 @@
 {
   "name": "flappybird-landingpage",
   "version": "1.0.0",
-  "description": "flappy landing page clone",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browserify": "^11.0.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-jshint": "^1.11.2",
+    "gulp-bower": "^0.0.10",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-sass": "^2.0.4",
+    "node-neat": "^1.7.2",
+    "node-bourbon": "^4.2.3",
+    "vinyl-source-stream": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "gulp-uglify": "^1.2.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,22 +32,5 @@
   "bugs": {
     "url": "https://github.com/TommyCakes/Flappy-Bird-Landing-Page/issues"
   },
-  "homepage": "https://github.com/TommyCakes/Flappy-Bird-Landing-Page#readme",
-  "devDependencies": {
-    "browserify": "^10.2.6",
-    "gulp": "^3.9.0",
-    "gulp-bower": "0.0.10",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^2.2.0",
-    "gulp-imagemin": "^2.3.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-minify-html": "^1.0.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.2.0",
-    "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
-  }
+  "homepage": "https://github.com/TommyCakes/Flappy-Bird-Landing-Page#readme"
 }
