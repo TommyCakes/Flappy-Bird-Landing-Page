@@ -43,6 +43,12 @@ gulp.task('styles', function() {
     .pipe(concat('styles.css'))
     .pipe(gulp.dest('build/css'));
 });
+//Sass task
+gulp.task('sass', function () {
+  gulp.src('./scss/.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css'));
+});
 
 // Image optimization task
 gulp.task('images', function() {
