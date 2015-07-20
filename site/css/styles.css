@@ -1,64 +1,121 @@
+html {
+  box-sizing: border-box; }
 
-$tablet: 'min-width: 768px';
-$desktop: 'min-width: 1024px';
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
 
 .container {
-    width: 100%;
-    @media screen and ($tablet) {
-        width: 90%;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    @media screen and ($desktop) {
-        max-width: 1040px;
-        margin: 0 auto;
-    }
-}
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1040px;
+      margin: 0 auto; } }
+
 body {
-  text-align:center;
-  color:blue;
-  font-family: 'Roboto', sans-serif;
-  
-}
-h1 {
-    color:white;
+  text-align: center;
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+.top {
+  width: 100%;
+  height: 50em;
+  overflow: hidden;
+  background: url("http://digitalbreed.com/wp-content/uploads/2014/02/09-parallax-scrolling.gif");
+  background-size: 180% 117%; }
+  .top h1 {
+    color: white;
     position: absolute;
     top: 200px;
     width: 100%;
     margin: 0 auto;
-    z-index:99;
-    letter-spacing:10px;
-}
-  }
-.top {
-      background-color:#6DC5D0;
-      margin-top:-20px;
-      width: 80%;
-      height: 10em;
-}
-.top img {
-  width:100%;
-  height:59.9em;
-  opacity:1%;
-  position:relative;
-  margin-right:100px;
-  
-}
+    z-index: 99;
+    letter-spacing: 10px; }
+  .top img {
+    width: 100%;
+    height: 59.9em;
+    position: relative;
+    margin-right: 100px; }
+
 .mid {
-      background-color:#DFD990;
-      width:100%;
-      height:45em;
-      margin-top:-10px;
-   }
-.jumbotron {
-  background:#53E56E;
-  bottom:0;
+  background-color: #DFD990;
+  width: 100%;
+  height: 600px;
+  margin-top: -10px; }
+  .mid h3 {
+    color: white;
+    position: relative;
+    top: 20px;
+    width: 40%;
+    margin: 0 auto;
+    z-index: 99;
+    letter-spacing: 5px; }
+
+img {
   position: relative;
-  height:150px;
-}
+  top: 40px;
+  height: 120px;
+  width: 60%;
+  margin: 0 auto; }
 
+h4 {
+  color: white;
+  position: relative;
+  top: 80px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  z-index: 99;
+  letter-spacing: 5px; }
 
+.button {
+  top: 100px;
+  z-index: 9;
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  padding: 6px 24px;
+  border: 1px solid #45861a;
+  border-radius: 8px;
+  background: #70d92b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#70d92b), to(#45861a));
+  background: -moz-linear-gradient(top, #70d92b, #45861a);
+  background: linear-gradient(to bottom, #70d92b, #45861a);
+  text-shadow: #2b5411 1px 1px 1px;
+  font: normal normal bold 19px verdana;
+  color: #ffffff;
+  text-decoration: none; }
 
+a.button:hover {
+  border: 1px solid #56a721;
+  background: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#86ff34), to(#53a11f));
+  background: -moz-linear-gradient(top, #86ff34, #53a11f);
+  background: linear-gradient(to bottom, #86ff34, #53a11f);
+  color: #ffffff;
+  text-decoration: none; }
 
- 
- 
+.jumbotron {
+  background: #53E56E;
+  bottom: 0;
+  position: relative;
+  height: 100px; }
+  .jumbotron ul {
+    display: inline-block;
+    color: black; }
+    .jumbotron ul li {
+      display: inline-block;
+      padding: 5px;
+      color: white; }
+
+p {
+  color: black; }
