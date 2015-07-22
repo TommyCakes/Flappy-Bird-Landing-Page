@@ -81,3 +81,7 @@ gulp.task('default', ['jshint', 'sass', 'watch']);
 
 // Build task
 gulp.task('build', ['jshint', 'sass', 'html', 'scripts', 'styles', 'images']);
+
+
+//!!git subtree push --prefix build origin gh-pages
+// Add just teh build to gh-pages!!
