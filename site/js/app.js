@@ -1,6 +1,5 @@
 $(document).ready(function () {
-  
-  })
+
   $('.button').mouseenter(function ( ){
     $(this)
     .velocity({ scale: "1.1"}, 1050,
