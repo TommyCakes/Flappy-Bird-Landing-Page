@@ -422,3 +422,140 @@ td,
 th {
   padding: 0;
 }
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.container {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 100%;
+      max-width: 1638px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1638px) {
+    .container {
+      width: 100%;
+      max-width: 1638px;
+      margin: 0 auto; } }
+
+body {
+  text-align: center;
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+.top {
+  width: 100%;
+  height: 50em;
+  overflow: hidden;
+  background-image: url("../images/09-parallax-scrolling_360.gif");
+  background-size: cover;
+  background-position: center; }
+  @media screen and (min-width: 768px) {
+    .top {
+      width: 100%; } }
+  .top h1 {
+    color: white;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 99;
+    letter-spacing: 10px; }
+    @media screen and (min-width: 768px) {
+      .top h1 {
+        letter-spacing: 30px; } }
+  .top img {
+    width: 100%;
+    height: 59.9em;
+    position: relative;
+    margin-right: 100px; }
+
+.mid {
+  background-color: #DFD990;
+  width: 100%;
+  min-height: 600px;
+  margin-top: -10px; }
+  @media screen and (min-width: 768px) {
+    .mid {
+      min-height: 700px; } }
+  .mid h3 {
+    color: grey;
+    position: relative;
+    top: 20px;
+    width: 40%;
+    margin: 0 auto;
+    z-index: 99;
+    letter-spacing: 5px;
+    font-size: 1em; }
+    @media screen and (min-width: 768px) {
+      .mid h3 {
+        font-size: 2em; } }
+
+img {
+  position: relative;
+  top: 40px;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  display: block; }
+
+h4 {
+  color: grey;
+  position: relative;
+  top: 80px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  z-index: 99;
+  font-size: 1em;
+  letter-spacing: 5px; }
+  @media screen and (min-width: 768px) {
+    h4 {
+      font-size: 2em; } }
+
+.button {
+  top: 90px;
+  z-index: 9;
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  padding: 6px 24px;
+  border: 1px solid #45861a;
+  border-radius: 8px;
+  background: #70d92b; }
+
+.jumbotron {
+  background: #703C52;
+  bottom: 0;
+  position: relative;
+  min-height: 120px; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      height: 130px; } }
+  .jumbotron ul {
+    display: inline-block; }
+    .jumbotron ul li {
+      display: inline-block;
+      padding: 5px;
+      color: white;
+      font-size: 1em; }
+      @media screen and (min-width: 768px) {
+        .jumbotron ul li {
+          font-size: 1.2em;
+          padding: 15px; } }
+
+p {
+  color: black; }

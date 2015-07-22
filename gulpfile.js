@@ -21,7 +21,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('site/js/*.js', ['jshint']);
     gulp.watch("site/*.html").on('change', browserSync.reload);
 });
-    
+
 
 // JavaScript linting task
 gulp.task('jshint', function() {
@@ -65,14 +65,14 @@ gulp.task('styles', function() {
 
 // Image optimization task
 gulp.task('images', function() {
-  return gulp.src('site/img/*')
+  return gulp.src('site/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('build/img'));
 });
 
 // Watch task
 // gulp.task('watch', function() {
-  
+
 //   gulp.watch('site/scss/*.scss', ['sass']);
 // });
 
